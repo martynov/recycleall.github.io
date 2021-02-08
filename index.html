@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<link rel="stylesheet" href="/css/style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta charset="utf-8">
+		<title>RecycleAll</title>
+	</head>
+
+	<body class="body">
+
+		<header class="header header_transparent">
+    <div class="header__content">
+        <div class="header__row">
+            <div class="header__col header__col_logo">
+                <div class="header__logo">
+                    <a href="/" class="logo"></a>
+                </div>
+            </div>
+            <div class="header__col header__col_main">
+                <div class="header__trigger"></div>
+                <div class="header__main">
+                    <div class="header__menu">
+                        <div class="menu">
+    <div class="menu__trigger"></div>
+    <ul class="menu__list">
+        <li class="menu__item">
+            <a class="menu__link" href="/index.html#production">Продукция</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/about.html">О компании</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="/about.html#form">Обратная связь</a>
+        </li>
+    </ul>
+</div>
+                    </div>
+                    <div class="header__search">
+                        <div class="search">
+    <div class="search__fieldset">
+        <input type="text" class="search__input" placeholder="Поиск"/>
+        <input type="submit" class="search__submit" value="Найти" />
+        <span class="search__icon search__icon_left"></span>
+        <span class="search__icon search__icon_right"></span>
+    </div>
+</div>
+                    </div>
+                    <div class="header__language">
+                        <div class="language">
+    <div class="language__label">
+        <div class="language__flag language__flag_in-label language__flag_ru"></div>
+        <div class="language__value language__value_in-label">Russian</div>
+    </div>
+    <div class="language__dropdown"><!-- language__dropdown_active -->
+        <div class="language__item">
+            <a class="language__link" href="?lang=ru">
+                <div class="language__flag language__flag_small language__flag_ru"></div>
+                <div class="language__value">Russian</div>
+            </a>
+        </div>
+        <div class="language__item">
+            <a class="language__link" href="?lang=en">
+                <div class="language__flag language__flag_small language__flag_us"></div>
+                <div class="language__value">English</div>
+            </a>
+        </div>
+        <div class="language__item">
+            <a class="language__link" href="?lang=fi">
+                <div class="language__flag language__flag_small language__flag_fi"></div>
+                <div class="language__value">Suomi</div>
+            </a>
+        </div>
+    </div>
+    <select class="language__select" onchange="top.location=this.value">
+        <option value="?lang=ru">Russian</option>
+        <option value="?lang=en">English</option>
+        <option value="?lang=fi">Suomi</option>
+    </select>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+		
+		<section class="main">
+			
+			<div class="main__row">
+				<div class="home-banner">
+    <div class="home-banner__slider">
+        <div class="home-banner__list">
+            <div class="home-banner__item">
+                <div class="home-banner__background" style="background-image: url(/img/photos/000006-2000.jpg)"></div>
+                <div class="home-banner__column wrapper">
+                    <div class="home-banner__box box box_green box_pattern-black-10">
+                        <div class="box__title title">Добро пожаловать на сайт компании «Recycle All»!</div>
+                        <div class="box__content">
+                            <p>Мы предоставляем услуги по утилизации отходов, консультации по экологической инженерии и высококачественное оборудование для переработки отходов.</p>
+                            <p>Имея 22-летний опыт работы, мы помогаем клиентам в выборе подходящего оборудования, его доставке, сборке, установке и инструктируем команду по использованию машин или оборудования, включая послепродажное обслуживание.</p>
+                        </div>
+                        <div class="box__footer">
+                            <a href="/about.html" class="box__button button button_autowidth button_small button_red">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+			</div>
+
+			<div class="main__row trash-types">
+				<a name="production"></a>
+				<div class="trash-types__header">
+					<div class="trash-types__wrapper wrapper">
+						<div class="trash-types__title title">Наша продукция</div>
+						<div class="trash-types__category">
+							<div class="trash-types__tab trash-types__tab_active" data-tab="all">
+								<div class="trash-types__icon trash-types__icon_trash-bin"></div>
+								<div class="trash-types__tab-title">Все виды мусора</div>
+							</div>
+							<div class="trash-types__tab" data-tab="paper">
+								<div class="trash-types__icon trash-types__icon_paper-bin"></div>
+								<div class="trash-types__tab-title">Бумага и картон</div>
+							</div>
+							<div class="trash-types__tab" data-tab="plastic">
+								<div class="trash-types__icon trash-types__icon_plastic-bottle"></div>
+								<div class="trash-types__tab-title">Пластмассы и полиэтилен</div>
+							</div>
+							<div class="trash-types__tab" data-tab="metal">
+								<div class="trash-types__icon trash-types__icon_metal"></div>
+								<div class="trash-types__tab-title">Металлические отходы</div>
+							</div>
+							<div class="trash-types__tab" data-tab="oraganic">
+								<div class="trash-types__icon trash-types__icon_organic"></div>
+								<div class="trash-types__tab-title">Биологические и сельскохоз-отходы</div>
+							</div>
+							<div class="trash-types__tab" data-tab="glass">
+								<div class="trash-types__icon trash-types__icon_glass"></div>
+								<div class="trash-types__tab-title">Стеклянный мусор</div>
+							</div>
+							<div class="trash-types__tab" data-tab="factory">
+								<div class="trash-types__icon trash-types__icon_factory"></div>
+								<div class="trash-types__tab-title">Промышленные отходы</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="trash-types__content">
+					<div class="trash-types__services services-slider">
+						<div class="services-slider__wrapper wrapper">
+							<div class="services-slider__slider">
+								<div class="services-slider__list">
+									<div class="services-slider__item" data-type="oraganic">
+										<div class="service-card">
+											<div class="service-card__image" style="background-image: url(/i/services-card-thumbnails/waste_shredders.jpg)"></div>
+											<div class="service-card__content box">
+												<div class="service-card__title box__title title">Измельчители отходов</div>
+												<div class="service-card__text box__content">Измельчители отходов для самых разных материалов. Измельчают отходы на более мелкие кусочки.</div>
+												<div class="service-card__footer box__footer">
+													<a href="/products/waste_shredders.html" class="service-card__button button button_autowidth button_small button_blue button_linear">Подробнее</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="services-slider__item" data-type="oraganic">
+										<div class="service-card">
+											<div class="service-card__image" style="background-image: url(/i/services-card-thumbnails/pellet_machinery.jpg)"></div>
+											<div class="service-card__content box">
+												<div class="service-card__title box__title title">Оборудование для изготовления пеллет</div>
+												<div class="service-card__text box__content">Машины для производства пеллет из порошкообразного материала. Объединяют небольшие кусочки материалов в более крупные или крошечные массы.</div>
+												<div class="service-card__footer box__footer">
+													<a href="/products/pellet_machinery.html" class="service-card__button button button_autowidth button_small button_blue button_linear">Подробнее</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="services-slider__item" data-type="oraganic">
+										<div class="service-card">
+											<div class="service-card__image" style="background-image: url(/i/services-card-thumbnails/baler_machinery.jpg)"></div>
+											<div class="service-card__content box">
+												<div class="service-card__title box__title title">Машины для упаковки в тюки</div>
+												<div class="service-card__text box__content">Упаковка в тюки различных материалов для уплотнения крупногабаритных отходов.</div>
+												<div class="service-card__footer box__footer">
+													<a href="/products/baler_machinery.html" class="service-card__button button button_autowidth button_small button_blue button_linear">Подробнее</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="services-slider__item" data-type="oraganic">
+										<div class="service-card">
+											<div class="service-card__image" style="background-image: url(/i/services-card-thumbnails/packaging_press_machinery.jpg)"></div>
+											<div class="service-card__content box">
+												<div class="service-card__title box__title title">Упаковочные прессы</div>
+												<div class="service-card__text box__content">Машины для упаковки прессов, особенно для жидких упакованных продуктов. </div>
+												<div class="service-card__footer box__footer">
+													<a href="/products/packaging_press_machinery.html" class="service-card__button button button_autowidth button_small button_blue button_linear">Подробнее</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="services-slider__item" data-type="oraganic">
+										<div class="service-card">
+											<div class="service-card__image" style="background-image: url(/i/services-card-thumbnails/plastic_recyclers.jpg)"></div>
+											<div class="service-card__content box">
+												<div class="service-card__title box__title title">Машины для переработки пластмасс</div>
+												<div class="service-card__text box__content">Создавайте решения для вашей деятельности по переработке пластмасс с помощью новейших технологий, производительных машин и комплексных линий, специально адаптированных к вашим нуждам и потребностям.</div>
+												<div class="service-card__footer box__footer">
+													<a href="/products/plastic_recyclers.html" class="service-card__button button button_autowidth button_small button_blue button_linear">Подробнее</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main__row home-video">
+				<div class="home-video__background"></div>
+				<div class="home-video__content wrapper">
+					<div class="home-video__box box box_black">
+						<div class="box__title title">Рабочий процесс и культура производства</div>
+						<div class="box__content">
+							<p>Ретроконверсия национального наследия, как следует из вышесказанного, неверно экономит продукт. Департамент маркетинга и продаж, на первый взгляд, охватывает социометрический пак-шот, размещаясь во всех медиа. Имидж предприятия экономит культурный пак-шот. Более того, бизнес-стратегия выражена наиболее полно.</p>
+							<p>Медийный канал основательно подпорчен предыдущим опытом применения. Не факт, что VIP-мероприятие сознательно отталкивает BTL,</p>
+						</div>
+						<div class="box__footer">
+							<a href="#" class="box__button button button_autowidth button_small button_red">Подробнее</a>
+						</div>
+					</div>
+					<div class="home-video__video">
+						<iframe class="home-video__iframe" src="https://www.youtube.com/embed/dyiYg_84Rp0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="main__row main__row_white main__row_tall">
+				<div class="wrapper">
+					<div class="title">Преимущества работы с нами</div>
+					<p>Полный пакет услуг «под ключ» — консультации по экологической инженерии, закупка и доставка.</p>
+					<p>Древесные пеллеты, импортируемые из восточных стран с целью переработки отходов.</p>
+					<p>Поставки высококачественного оборудования от наших клиентов:</p>
+					<div class="partners">
+    <div class="partners__list">
+        <div class="partners__item">
+            <div class="partners__logo" style="background-image: url(/i/partners/imabe.png);"></div>
+        </div>
+        <div class="partners__item">
+            <div class="partners__logo partners__logo_shadow" style="background-image: url(/i/partners/kahl.png);"></div>
+        </div>
+        <div class="partners__item">
+            <div class="partners__logo" style="background-image: url(/i/partners/puhler.png);"></div>
+        </div>
+        <div class="partners__item">
+            <div class="partners__logo partners__logo_shadow" style="background-image: url(/i/partners/neueherbold.png);"></div>
+        </div>
+    </div>
+</div>
+				</div>
+			</div>
+
+			<div class="main__row home-slideshow">
+				<div class="home-slideshow__background"></div>
+				<div class="home-slideshow__content wrapper">
+					<div class="home-slideshow__box box box_grey">
+						<div class="box__title title">Рабочий процесс и культура производства</div>
+						<div class="box__content">
+							<p>Ретроконверсия национального наследия, как следует из вышесказанного, неверно экономит продукт. Департамент маркетинга и продаж, на первый взгляд, охватывает социометрический пак-шот, размещаясь во всех медиа. Имидж предприятия экономит культурный пак-шот. Более того, бизнес-стратегия выражена наиболее полно.</p>
+							<p>Медийный канал основательно подпорчен предыдущим опытом применения. Не факт, что VIP-мероприятие сознательно отталкивает BTL,</p>
+						</div>
+						<div class="box__footer">
+							<a href="#" class="box__button button button_autowidth button_small button_red">Подробнее</a>
+						</div>
+					</div>
+					<div class="home-slideshow__preview">
+						<div class="home-slideshow__subtitle">59 фотографий</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main__row main__row_white home-aside ">
+				<div class="home-aside__content wrapper">
+					<div class="home-aside__row">
+						<div class="home-aside__col home-aside__col_news">
+							<div class="title">Новости</div>
+							<div class="home-aside__news-slider">
+								<div class="news news_slider">
+    <div class="news__list">
+        <div class="news__item">
+            <div class="news-card news-card_medium">
+                <a class="news-card__link" href="#">Завершено строительство второго мусоросжигательного цеха на заводе в Долгопрудном</a>
+                <div class="news-card__photo" style="background-image: url(../img/photos/000008-400x300.jpg)";></div>
+                <div class="news-card__content">
+                    <div class="news-card__row">
+                        <div class="news-card__date">14 июля 2019</div>
+                        <div class="news-card__category">Новости</div>
+                    </div>
+                    <div class="news-card__title">
+                        <span>Завершено строительство второго мусоросжигательного цеха на заводе в Долгопрудном</span>
+                    </div>
+                    <div class="news-card__row">
+                        <a href="#" class="news-card__read-more">
+                            <span>Читать далее</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news__item">
+            <div class="news-card news-card_medium">
+                <a class="news-card__link" href="#">Завершено строительство второго мусоросжигательного цеха на заводе в Долгопрудном</a>
+                <div class="news-card__photo" style="background-image: url(../img/photos/000008-400x300.jpg)";></div>
+                <div class="news-card__content">
+                    <div class="news-card__row">
+                        <div class="news-card__date">14 июля 2019</div>
+                        <div class="news-card__category">Новости</div>
+                    </div>
+                    <div class="news-card__title">
+                        <span>Завершено строительство второго мусоросжигательного цеха на заводе в Долгопрудном</span>
+                    </div>
+                    <div class="news-card__row">
+                        <a href="#" class="news-card__read-more">
+                            <span>Читать далее</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news__item">
+            <div class="news-card news-card_medium">
+                <a class="news-card__link" href="#">Завершено строительство второго мусоросжигательного цеха на заводе в Долгопрудном</a>
+                <div class="news-card__photo" style="background-image: url(../img/photos/000008-400x300.jpg)";></div>
+                <div class="news-card__content">
+                    <div class="news-card__row">
+                        <div class="news-card__date">14 июля 2019</div>
+                        <div class="news-card__category">Новости</div>
+                    </div>
+                    <div class="news-card__title">
+                        <span>Завершено строительство второго мусоросжигательного цеха на заводе в Долгопрудном</span>
+                    </div>
+                    <div class="news-card__row">
+                        <a href="#" class="news-card__read-more">
+                            <span>Читать далее</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news__item">
+            <div class="news-card news-card_medium">
+                <a class="news-card__link" href="#">Завершено строительство второго мусоросжигательного цеха на заводе в Долгопрудном</a>
+                <div class="news-card__photo" style="background-image: url(../img/photos/000008-400x300.jpg)";></div>
+                <div class="news-card__content">
+                    <div class="news-card__row">
+                        <div class="news-card__date">14 июля 2019</div>
+                        <div class="news-card__category">Новости</div>
+                    </div>
+                    <div class="news-card__title">
+                        <span>Завершено строительство второго мусоросжигательного цеха на заводе в Долгопрудном</span>
+                    </div>
+                    <div class="news-card__row">
+                        <a href="#" class="news-card__read-more">
+                            <span>Читать далее</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+							</div>
+						</div>
+						<div class="home-aside__col home-aside__col_contacts">
+							<div class="contact">
+    <div class="contact__title">Электронная почта</div>
+    <div class="contact__value contact__value_smaller">recycleall.contact@gmail.com</div>
+    <div class="contact__subtitle">Для жалоб и предложений</div>
+</div>
+<div class="contact">
+    <div class="contact__title">Demis Nadew</div>
+    <div class="contact__value">+358 45 857 8319</div>
+    <div class="contact__subtitle">Project Manager</div>
+</div>
+<div class="contact">
+    <div class="contact__title">Наш адрес</div>
+    <div class="contact__value contact__value_smaller">Hernepellontie 26<br/>Helsinki 00710, Finland</div>
+</div>
+<!-- <div class="contact">
+    <div class="contact__title">Мы в социальных сетях</div>
+    <div class="contact__value"></div>
+</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main__row main__row_grey main__row_medium seo">
+				<div class="seo__content wrapper">
+					<div class="seo__head">
+						<div class="seo__title">Мы — </div><div class="seo__logo"><div class="logo"></div></div>
+					</div>
+					<div class="seo__text">В XXI веке сложно переоценить важность переработки мусора. Мы все уже давно привыкли контролировать количество отходов и ходить в супермаркет со своей сумкой, но одного только отказа от пакетов мало для изменения экологической обстановки в мире. В то же время, многие категории отходов, такие бумага и пластмасса, могут быть переработаны и использованы повторно; а некоторые виды мусора — например, отходы деревообрабатывающей промышленности — могут быть сожжены без вреда для окружающей среды и без необходимости создания специализированных мусорных полигонов.</div>
+				</div>
+			</div>
+
+		</section>
+
+		<footer class="footer">
+    <div class="footer__content wrapper">
+        <div class="footer__row">
+            <div class="footer__col footer__col_logo">
+                <a href="/" class="logo logo_greyscale"></a>
+            </div>
+            <div class="footer__col footer__col_menu">
+                <div class="foot-nav">
+                    <div class="foot-nav__group">
+                        <div class="foot-nav__subtitle">Компания</div>
+                        <div class="foot-nav__list">
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="/">Главная</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="/about.html">О компании</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="/about.html#form">Обратная связь</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot-nav__group">
+                        <div class="foot-nav__subtitle">Продукция</div>
+                        <div class="foot-nav__list">
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="/products/waste_shredders.html">Измельчители отходов</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="/products/pellet_machinery.html">Оборудование для изготовления пеллет</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="/products/baler_machinery.html">Машины для упаковки в тюки</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="/products/packaging_press_machinery.html">Упаковочные прессы</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="/products/plastic_recyclers.html">Машины для переработки пластмасс</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="foot-nav__group">
+                        <div class="foot-nav__subtitle">About WEIMA</div>
+                        <div class="foot-nav__list">
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">We are WEIMA</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">Trade Shows</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">Success Stories</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">News & Press</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">Used Machinery</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">ServicePort Chat Bot</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">Services we offer</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">Jobs & Careers</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foot-nav__group">
+                        <div class="foot-nav__subtitle">General</div>
+                        <div class="foot-nav__list">
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">Contact</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">WEIMApedia</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">FAQ</a>
+                            </div>
+                            <div class="foot-nav__item">
+                                <a class="foot-nav__link" href="#1">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="/js/index.js"></script>
+
+	</body>
+
+</html>

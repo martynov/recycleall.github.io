@@ -1,0 +1,31 @@
+<div class="language">
+    <div class="language__label">
+        <div class="language__flag language__flag_in-label language__flag_ru"></div>
+        <div class="language__value language__value_in-label">Russian</div>
+    </div>
+    <div class="language__dropdown"><!-- language__dropdown_active -->
+        <div class="language__item">
+            <a class="language__link" href="?lang=ru">
+                <div class="language__flag language__flag_small language__flag_ru"></div>
+                <div class="language__value">Russian</div>
+            </a>
+        </div>
+        <div class="language__item">
+            <a class="language__link" href="?lang=en">
+                <div class="language__flag language__flag_small language__flag_us"></div>
+                <div class="language__value">English</div>
+            </a>
+        </div>
+        <div class="language__item">
+            <a class="language__link" href="?lang=fi">
+                <div class="language__flag language__flag_small language__flag_fi"></div>
+                <div class="language__value">Suomi</div>
+            </a>
+        </div>
+    </div>
+    <select class="language__select" onchange="top.location=this.value">
+        <option value="?lang=ru">Russian</option>
+        <option value="?lang=en">English</option>
+        <option value="?lang=fi">Suomi</option>
+    </select>
+</div>
